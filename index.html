@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasper 的个人主页</title>
+    <title>首页 | Jasper 的学习主页</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Jasper's Site</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="plan.html">学习计划</a></li>
+                <li><a href="todo.html">待办清单</a></li>
+                <li><a href="log.html">学习日志</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <section class="card">
             <h1>你好，我是 Jasper 👋</h1>
-            <p class="subtitle">智能科学与技术专业 | 正在学习 Git & GitHub</p>
-        </header>
-
-        <section class="about">
-            <h2>关于我</h2>
-            <p>目前在读大二，对AI、前端开发和开源项目感兴趣，正在系统学习版本控制和项目协作。</p>
-            <p>会当凌绝顶，一览众山小。</p>
-        </section>
-
-        <section class="skills">
-            <h2>正在学习</h2>
-            <ul>
-                <li>Git & GitHub 版本管理</li>
-                <li>Python 编程</li>
-                <li>HTML / CSS 网页开发</li>
+            <p class="subtitle">智能科学与技术专业 | 持续学习中</p>
+            <p>目前在读大二，对AI、前端开发和开源项目感兴趣，正在系统学习 Git & GitHub，用这个网站记录自己的成长。</p>
+            <br>
+            <p>你可以通过顶部导航切换不同功能页面：</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li><strong>学习计划</strong>：管理中长期学习目标，支持设置 DDL</li>
+                <li><strong>待办清单</strong>：记录日常待办，勾选完成状态</li>
+                <li><strong>学习日志</strong>：按日期记录每日学习内容</li>
             </ul>
         </section>
-
-        <section class="contact" id="contact">
-            <h2>联系方式</h2>
-            <p>GitHub：<a href="https://github.com/t8z7b7655b-svg" target="_blank">@你t8z7b7655b-svg</a></p>
-        </section>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Jasper · Built with GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习日志 | Jasper 的学习主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Jasper's Site</a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="plan.html">学习计划</a></li>
+                <li><a href="todo.html">待办清单</a></li>
+                <li><a href="log.html" class="active">学习日志</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <section class="card">
+            <h2>📝 每日学习日志</h2>
+            <p class="log-date-tip" id="todayDate"></p>
+            <div class="input-group">
+                <textarea id="logInput" rows="4" placeholder="记录今天学了什么..."></textarea>
+                <button id="addLogBtn">保存今日日志</button>
+            </div>
+            <div id="logHistory" class="log-history"></div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Jasper · Built with GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
